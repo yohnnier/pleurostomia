@@ -18,52 +18,71 @@ body {
   justify-content: center;
   padding: 40px 20px;
 }
-h1 { font-size: 1.5rem; font-weight: 700; text-align:center; margin-bottom: 8px; }
-.sub { font-size: 0.8rem; color: #7dd3fc; text-align:center; font-family:'IBM Plex Mono',monospace; margin-bottom: 40px; }
-.cards { display: flex; gap: 24px; flex-wrap: wrap; justify-content: center; }
+h1 { font-size: 1.5rem; font-weight: 700; text-align:center; margin-bottom: 6px; }
+.sub { font-size: 0.78rem; color: #7dd3fc; text-align:center; font-family:'IBM Plex Mono',monospace; margin-bottom: 10px; }
+.sub2 { font-size: 0.68rem; color: #475569; text-align:center; margin-bottom: 40px; }
+.cards { display: flex; gap: 20px; flex-wrap: wrap; justify-content: center; }
 .card {
   background: #111827;
   border: 2px solid #1e3a5f;
   border-radius: 16px;
-  padding: 28px 32px;
-  width: 280px;
+  padding: 26px 28px;
+  width: 270px;
   text-decoration: none;
   color: inherit;
-  transition: all 0.2s;
+  transition: all 0.22s;
   text-align: center;
 }
-.card:hover { border-color: #0ea5e9; transform: translateY(-4px); box-shadow: 0 12px 40px rgba(14,165,233,0.2); }
-.card.green { border-color: #1a3a2a; }
-.card.green:hover { border-color: #22c55e; box-shadow: 0 12px 40px rgba(34,197,94,0.2); }
-.icon { font-size: 2.5rem; margin-bottom: 16px; }
+.card:hover { transform: translateY(-5px); }
+.card.blue:hover  { border-color:#0ea5e9; box-shadow:0 14px 40px rgba(14,165,233,0.2); }
+.card.green:hover { border-color:#22c55e; box-shadow:0 14px 40px rgba(34,197,94,0.2); }
+.card.purple:hover{ border-color:#a855f7; box-shadow:0 14px 40px rgba(168,85,247,0.2); }
+.card.blue  { border-color:#1e3a5f; }
+.card.green { border-color:#1a3a2a; }
+.card.purple{ border-color:#2a1a3a; }
+.icon { font-size: 2.8rem; margin-bottom: 14px; }
 .card h2 { font-size: 1rem; font-weight: 700; margin-bottom: 8px; }
-.card p { font-size: 0.72rem; color: #94a3b8; line-height: 1.5; }
-.badge { display:inline-block; margin-top:14px; padding:4px 12px; border-radius:20px; font-size:0.65rem; font-family:'IBM Plex Mono',monospace; }
-.blue-badge { background:rgba(14,165,233,0.15); border:1px solid #0ea5e9; color:#7dd3fc; }
-.green-badge { background:rgba(34,197,94,0.15); border:1px solid #22c55e; color:#86efac; }
-footer { margin-top: 40px; font-size: 0.65rem; color: #475569; font-family:'IBM Plex Mono',monospace; }
+.card p { font-size: 0.71rem; color: #94a3b8; line-height: 1.55; }
+.badge { display:inline-block; margin-top:14px; padding:4px 12px; border-radius:20px; font-size:0.64rem; font-family:'IBM Plex Mono',monospace; }
+.bb { background:rgba(14,165,233,0.15); border:1px solid #0ea5e9; color:#7dd3fc; }
+.gb { background:rgba(34,197,94,0.15); border:1px solid #22c55e; color:#86efac; }
+.pb { background:rgba(168,85,247,0.15); border:1px solid #a855f7; color:#d8b4fe; }
+.divider { width: 60px; height: 2px; background: linear-gradient(90deg,#0ea5e9,#a855f7); border-radius:2px; margin: 0 auto 30px; }
+footer { margin-top: 44px; font-size: 0.64rem; color: #475569; font-family:'IBM Plex Mono',monospace; text-align:center; }
 </style>
 </head>
 <body>
 <h1>🫁 Covidien Aqua-Seal® CDU</h1>
-<div class="sub">Infografías Clínicas Interactivas · UTI Hospital de Ovalle · Innova Lab 2026</div>
+<div class="sub">Sistema de Drenaje Pleural — Tres Cámaras</div>
+<div class="sub2">Infografías Clínicas Interactivas · UTI Hospital de Ovalle · Innova Lab 2026</div>
+<div class="divider"></div>
 
 <div class="cards">
-  <a href="frontal.html" class="card">
+  <a href="frontal.html" class="card blue">
     <div class="icon">🔵</div>
     <h2>Vista Frontal</h2>
-    <p>Cámaras, escalas, control de succión, sello de agua y válvulas del panel frontal del dispositivo.</p>
-    <span class="badge blue-badge">8 hotspots · Vista frontal</span>
+    <p>Las tres cámaras (recolectora, sello, control), escalas de medición, válvulas del panel frontal y tubo de conexión al paciente.</p>
+    <span class="badge bb">8 hotspots · Panel frontal</span>
   </a>
 
   <a href="posterior.html" class="card green">
     <div class="icon">🟢</div>
     <h2>Vista Posterior</h2>
-    <p>Tubería de drenaje, conectores rojo/azul, válvula de control y acceso a la cámara de sellado.</p>
-    <span class="badge green-badge">8 hotspots · Vista posterior</span>
+    <p>Tubería de drenaje enrollada, extremo distal paciente, tapón rojo (NO colocar), cuerpo posterior y acceso al sello de agua.</p>
+    <span class="badge gb">8 hotspots · Vista posterior</span>
+  </a>
+
+  <a href="superior.html" class="card purple">
+    <div class="icon">🟣</div>
+    <h2>Vista Superior</h2>
+    <p>Panel superior con jeringa de llenado "Kink & Fill", puerto de succión, tapón control, válvula azul y válvula de presión positiva.</p>
+    <span class="badge pb">8 hotspots · Panel superior</span>
   </a>
 </div>
 
-<footer>Innova Lab · Enfermería Intensivista · Hospital de Ovalle · 2026</footer>
+<footer>
+  Covidien Aqua-Seal® CDU · Ref. 8888571299 / 8888571406<br>
+  Innova Lab · Enfermería Intensivista · Hospital de Ovalle · 2026
+</footer>
 </body>
 </html>
